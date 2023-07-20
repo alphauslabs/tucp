@@ -24,7 +24,7 @@ var (
 	rootCmd = &cobra.Command{
 		Use:   "tucp",
 		Short: bold("tucp") + " - Command line interface for tucpd",
-		Long: bold("tucp") + ` - Command line interface for the TrueUnblended Control Plane.
+		Long: bold("tucp") + ` - Command line interface for our TrueUnblended Control Plane.
 Copyright (c) 2023-` + year() + ` Alphaus Cloud, Inc. All rights reserved.
 
 The general form is ` + bold("tucp <resource[ subresource...]> <action> [flags]") + `.
@@ -35,7 +35,8 @@ to the 'tucpd-[next|prod]' service, like so:
 
   $ iam allow-me tucpd-prod
 
-You only need to do this once.`,
+You only need to do this once. See https://github.com/alphauslabs/iam
+for more information about the 'iam' tool.`,
 		PersistentPreRun: func(cmd *cobra.Command, args []string) {
 			params.ServiceHost = params.HostProd
 			switch params.RunEnv {
