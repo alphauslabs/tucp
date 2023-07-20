@@ -6,7 +6,7 @@ To install using [HomeBrew](https://brew.sh/), run the following command:
 $ brew install alphauslabs/tap/tucp
 ```
 
-To setup authentication, set your `GOOGLE_APPLICATION_CREDENTIALS` env variable. You also need to give your credentials file access to the `tucpd-[next|prod]` service. To do so, try the following commands:
+To setup authentication, set your `GOOGLE_APPLICATION_CREDENTIALS` env variable using your credentials file. You also need to give your credentials file access to the `tucpd-[next|prod]` service. To do so, try the following commands:
 
 ```bash
 # Install the `iam` tool:
@@ -15,7 +15,7 @@ $ brew install alphauslabs/tap/iam
 # Validate `iam` credentials:
 $ iam whoami
 
-# Request access to our `tucpd-[next|prod]` service:
+# Request access to our `tucpd-[next|prod]` service (once only):
 $ iam allow-me tucpd-prod
 ```
 
