@@ -9,6 +9,7 @@ import (
 
 	"github.com/alphauslabs/bluectl/pkg/logger"
 	"github.com/alphauslabs/tucp/cmds/invoice"
+	"github.com/alphauslabs/tucp/cmds/runtime"
 	"github.com/alphauslabs/tucp/params"
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
@@ -84,6 +85,7 @@ func init() {
 	rootCmd.PersistentFlags().StringVar(&params.RunEnv, "env", "prod", "dev, next, or prod")
 	rootCmd.AddCommand(
 		invoice.InvoiceCmd(),
+		runtime.RuntimeCmd(),
 	)
 }
 
