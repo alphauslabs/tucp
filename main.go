@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/alphauslabs/bluectl/pkg/logger"
+	"github.com/alphauslabs/tucp/cmds/invoice"
 	"github.com/alphauslabs/tucp/params"
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
@@ -81,9 +82,9 @@ func init() {
 	rootCmd.PersistentFlags().SortFlags = false
 	rootCmd.PersistentFlags().StringVar(&params.CredentialsFile, "creds-file", "", "optional, GCP service account file")
 	rootCmd.PersistentFlags().StringVar(&params.RunEnv, "env", "prod", "dev, next, or prod")
-	// rootCmd.AddCommand(
-	// 	cmds.WhoAmICmd(),
-	// )
+	rootCmd.AddCommand(
+		invoice.InvoiceCmd(),
+	)
 }
 
 func main() {
