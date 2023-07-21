@@ -20,9 +20,9 @@ func LsqCmd() *cobra.Command {
 		Short: "Inspect current queue count",
 		Long: `Inspect current queue count. Only available in production.
 
-The optional [next] argument is different than the --next flag: the
---next flag is not supported, while the [next] argument means query
-the next environment from prod, which is the correct one.`,
+The optional [next] argument is different than the --env=next flag:
+the --env=next flag is not supported, while the [next] argument
+means query the next environment from prod, which is correct.`,
 		Run: func(cmd *cobra.Command, args []string) {
 			ctx := context.Background()
 			con, err := connection.New(ctx)
