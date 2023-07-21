@@ -11,4 +11,5 @@ var (
 	AccessToken     string // auto-set, use as Bearer in subcommands
 	RunEnv          string // dev, next, prod (default)
 	ServiceHost     string // auto-set
+	Bare            bool   // minimal log output, good for jq
 )
