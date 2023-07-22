@@ -3,7 +3,7 @@ module github.com/alphauslabs/tucp
 go 1.20
 
 require (
-	github.com/alphauslabs/blue-internal-go v0.7.3
+	github.com/alphauslabs/blue-internal-go v0.7.4
 	github.com/alphauslabs/bluectl v0.34.12
 	github.com/fatih/color v1.15.0
 	github.com/spf13/cobra v1.7.0

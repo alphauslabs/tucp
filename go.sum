@@ -58,8 +58,8 @@ dmitri.shuralyov.com/gpu/mtl v0.0.0-20190408044501-666a987793e9/go.mod h1:H6x//7
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
-github.com/alphauslabs/blue-internal-go v0.7.3 h1:vAi4HZE6PwMvq/fS4jx5P00AaVfxXAtN+44EiVDclbs=
-github.com/alphauslabs/blue-internal-go v0.7.3/go.mod h1:vGxoJsulgwXfaeD8frjDQ8zdkcNle1Nly/kMeb+2g/U=
+github.com/alphauslabs/blue-internal-go v0.7.4 h1:iELFWrguz67XSG5LcWRa4Raf5WVIGlXYnmU3/n1xyYs=
+github.com/alphauslabs/blue-internal-go v0.7.4/go.mod h1:vGxoJsulgwXfaeD8frjDQ8zdkcNle1Nly/kMeb+2g/U=
 github.com/alphauslabs/bluectl v0.34.12 h1:aoWpp/idpdzTWixSbcaEBXDCcykYxLZK1P+e/owTqE8=
 github.com/alphauslabs/bluectl v0.34.12/go.mod h1:mV0slUtKni1oP6HeroZcw8Jb5BxeC5Ty4S3Ay6CcC34=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=

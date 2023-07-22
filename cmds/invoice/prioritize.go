@@ -30,7 +30,7 @@ func PrioritizeCmd() *cobra.Command {
 				return
 			}
 
-			logger.Infof("%v", resp.Status)
+			logger.Info(resp.Message)
 		},
 	}
 
