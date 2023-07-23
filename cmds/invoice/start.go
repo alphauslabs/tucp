@@ -11,10 +11,12 @@ import (
 
 func StartCmd() *cobra.Command {
 	var (
-		compIds   string
-		force     bool
-		acctsOnly bool
-		tagsOnly  bool
+		compIds     string
+		force       bool
+		acctsOnly   bool
+		tagsOnly    bool
+		skipFees    bool
+		skipSupport bool
 	)
 
 	cmd := &cobra.Command{
@@ -24,7 +26,10 @@ func StartCmd() *cobra.Command {
 for the previous UTC month.
 
 If both --accts-only and --tags-only are set, --tags-only is
-discarded and will proceed calculations as --accts-only.`,
+discarded and will proceed calculations as --accts-only.
+
+The --skip-support functions include (but not limited to) raw
+unblended exports, RI+SP and invoice id detections.`,
 		Run: func(cmd *cobra.Command, args []string) {
 			if len(args) == 0 {
 				logger.Error("[orgId] is required. See -h for usage.")
@@ -52,6 +57,8 @@ discarded and will proceed calculations as --accts-only.`,
 				Force:        force,
 				AccountsOnly: acctsOnly,
 				TagsOnly:     tagsOnly,
+				SkipFees:     skipFees,
+				SkipSupport:  skipSupport,
 			}
 
 			resp, err := client.StartInvoice(ctx, &req)
@@ -69,5 +76,7 @@ discarded and will proceed calculations as --accts-only.`,
 	cmd.Flags().BoolVar(&force, "force", force, "overwrite existing calculation, if any")
 	cmd.Flags().BoolVar(&acctsOnly, "accts-only", acctsOnly, "only for account BGs, skip tags")
 	cmd.Flags().BoolVar(&tagsOnly, "tags-only", tagsOnly, "only for tags-based BGs, skip accounts")
+	cmd.Flags().BoolVar(&skipFees, "skip-fees", skipFees, "skip fees aggregation/calculation")
+	cmd.Flags().BoolVar(&skipSupport, "skip-support", skipSupport, "skip additional support functions")
 	return cmd
 }
