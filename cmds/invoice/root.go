@@ -16,6 +16,10 @@ func InvoiceCmd() *cobra.Command {
 	}
 
 	cmd.Flags().SortFlags = false
-	cmd.AddCommand(PrioritizeCmd())
+	cmd.AddCommand(
+		StartCmd(),
+		PrioritizeCmd(),
+	)
+
 	return cmd
 }
