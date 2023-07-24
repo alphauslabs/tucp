@@ -8,6 +8,7 @@ import (
 	"time"
 
 	"github.com/alphauslabs/bluectl/pkg/logger"
+	"github.com/alphauslabs/tucp/cmds/curmx"
 	"github.com/alphauslabs/tucp/cmds/invoice"
 	"github.com/alphauslabs/tucp/cmds/runtime"
 	"github.com/alphauslabs/tucp/params"
@@ -90,6 +91,7 @@ func init() {
 	rootCmd.AddCommand(
 		invoice.InvoiceCmd(),
 		runtime.RuntimeCmd(),
+		curmx.CurmxCmd(),
 	)
 }
 
