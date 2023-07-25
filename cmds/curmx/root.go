@@ -16,6 +16,10 @@ func CurmxCmd() *cobra.Command {
 	}
 
 	cmd.Flags().SortFlags = false
-	cmd.AddCommand(SimulateCurImportedCmd())
+	cmd.AddCommand(
+		ImportCurCmd(),
+		SimulateCurImportedCmd(),
+	)
+
 	return cmd
 }
