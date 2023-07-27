@@ -63,10 +63,10 @@ means query the next environment from prod, which is correct.`,
 				}
 
 				switch {
-				case v.Code != 0:
-					logger.Errorf("%v", v.Message)
+				case v.Message.Code != 0:
+					logger.Errorf("%v", v.Message.Message)
 				default:
-					logger.Infof("%v", v.Message)
+					logger.Infof("%v", v.Message.Message)
 				}
 			}
 		},

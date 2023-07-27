@@ -19,6 +19,7 @@ func CurmxCmd() *cobra.Command {
 	cmd.AddCommand(
 		ImportCurCmd(),
 		SimulateCurImportedCmd(),
+		CurLsqCmd(),
 	)
 
 	return cmd

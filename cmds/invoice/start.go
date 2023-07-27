@@ -32,7 +32,7 @@ The --skip-support functions include (but not limited to) raw
 unblended exports, RI+SP and invoice id detections.`,
 		Run: func(cmd *cobra.Command, args []string) {
 			if len(args) == 0 {
-				logger.Error("[orgId] is required. See -h for usage.")
+				logger.Error("<orgId> is required. See -h for usage.")
 				return
 			}
 
