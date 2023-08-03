@@ -2,6 +2,7 @@ package invoice
 
 import (
 	"github.com/alphauslabs/bluectl/pkg/logger"
+	"github.com/alphauslabs/tucp/cmds/invoice/drift"
 	"github.com/spf13/cobra"
 )
 
@@ -19,6 +20,7 @@ func InvoiceCmd() *cobra.Command {
 	cmd.AddCommand(
 		StartCmd(),
 		PrioritizeCmd(),
+		drift.DriftCmd(),
 	)
 
 	return cmd
