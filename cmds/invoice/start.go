@@ -53,6 +53,7 @@ unblended exports, RI+SP and invoice id detections.`,
 			client := tucp.NewTuControlPlaneClient(con)
 			req := tucp.StartInvoiceRequest{
 				OrgId:        orgId,
+				CompanyIds:   compIds,
 				Month:        month,
 				Force:        force,
 				AccountsOnly: acctsOnly,
