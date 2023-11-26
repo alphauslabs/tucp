@@ -1,3 +1,5 @@
+[![main](https://github.com/alphauslabs/tucp/actions/workflows/main.yml/badge.svg)](https://github.com/alphauslabs/tucp/actions/workflows/main.yml)
+
 `tucp` is the command line client for the **TrueUnblended Control Plane** service [(tucpd)](https://github.com/mobingilabs/ouchan/tree/master/cloudrun/tucpd).
 
 To install using [HomeBrew](https://brew.sh/), run the following command:
