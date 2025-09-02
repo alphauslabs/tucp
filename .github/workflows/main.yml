@@ -26,11 +26,19 @@ jobs:
     #   run: |
     #     make
 
+    - uses: extractions/netrc@v2
+      with:
+        machine: github.com
+        username: mobingideployer
+        password: ${{ secrets.GH_PAT }}
+
     - name: 'Run tests'
+      env:
+        GOPRIVATE: github.com/alphauslabs
       run: |
-        eval "$(ssh-agent -s)"
-        ssh-add - <<< "${{ secrets.DK_BLUE_INTERNAL_GO }}"
-        git config --global --add url."ssh://git@github.com/".insteadOf "https://github.com/"
+        # eval "$(ssh-agent -s)"
+        # ssh-add - <<< "${{ secrets.DK_BLUE_INTERNAL_GO }}"
+        # git config --global --add url."ssh://git@github.com/".insteadOf "https://github.com/"
         # go test -v ./...
         go build -v
 
