@@ -1,3 +1,5 @@
+---
+version: 2
 builds:
 - id: "tucp"
   binary: tucp
@@ -21,13 +23,13 @@ release:
     owner: alphauslabs
     name: tucp
 brews:
-- tap:
+- repository:
     owner: alphauslabs
     name: homebrew-tap
   name: tucp
   homepage: "https://github.com/alphauslabs/tucp"
   description: "The official command line interface for Alphaus TrueUnblended Control Plane service."
-  folder: Formula
+  directory: Formula
   install: |
     bin.install "tucp"
   test: |
