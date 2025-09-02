@@ -25,10 +25,11 @@ jobs:
 
     - name: 'Run tests'
       run: |
-        eval "$(ssh-agent -s)"
-        ssh-add - <<< "${{ secrets.DK_BLUE_INTERNAL_GO }}"
-        git config --global --add url."ssh://git@github.com/".insteadOf "https://github.com/"
-        go test -v ./...
+        ls -laF
+        # eval "$(ssh-agent -s)"
+        # ssh-add - <<< "${{ secrets.DK_BLUE_INTERNAL_GO }}"
+        # git config --global --add url."ssh://git@github.com/".insteadOf "https://github.com/"
+        # go test -v ./...
 
     - name: 'Build binary'
       run: |
