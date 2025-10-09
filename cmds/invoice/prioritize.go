@@ -61,6 +61,8 @@ func PrioritizeCmd() *cobra.Command {
 							logger.Errorf("PrioritizeInvoice failed: %v", err)
 							return
 						}
+
+						logger.Info("Prioritizing invoice... enter ^C to stop")
 					}
 				}
 			} else {
