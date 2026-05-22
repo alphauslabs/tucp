@@ -4,7 +4,7 @@ go 1.25.0
 
 require (
 	github.com/alphauslabs/blue-internal-go v0.19.1
-	github.com/alphauslabs/bluectl v0.35.3
+	github.com/alphauslabs/blue-sdk-go v1.1.6
 	github.com/fatih/color v1.19.0
 	github.com/spf13/cobra v1.10.2
 	golang.org/x/oauth2 v0.36.0

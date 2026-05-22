@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/alphauslabs/blue-internal-go/tucp/v1"
-	"github.com/alphauslabs/bluectl/pkg/logger"
+	"github.com/alphauslabs/blue-sdk-go/pkg/logger"
 	"github.com/alphauslabs/tucp/pkg/connection"
 	"github.com/spf13/cobra"
 )

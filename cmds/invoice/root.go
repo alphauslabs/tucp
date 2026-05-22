@@ -1,7 +1,7 @@
 package invoice
 
 import (
-	"github.com/alphauslabs/bluectl/pkg/logger"
+	"github.com/alphauslabs/blue-sdk-go/pkg/logger"
 	"github.com/alphauslabs/tucp/cmds/invoice/drift"
 	"github.com/spf13/cobra"
 )

@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/alphauslabs/bluectl/pkg/logger"
+	"github.com/alphauslabs/blue-sdk-go/pkg/logger"
 	"github.com/alphauslabs/tucp/cmds/curmx"
 	"github.com/alphauslabs/tucp/cmds/invoice"
 	"github.com/alphauslabs/tucp/cmds/runtime"
