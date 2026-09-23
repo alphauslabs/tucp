@@ -3,7 +3,7 @@ package params
 const (
 	HostDev  = "tucpd-dev-cnugyv5cta-an.a.run.app"
 	HostNext = "tucpd-next-u554nqhjka-an.a.run.app"
-	HostProd = "tucpd-prod-u554nqhjka-an.a.run.app"
+	HostProd = "tucpd-prod-u554nqhjka-as.a.run.app"
 )
 
 var (
